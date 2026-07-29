@@ -88,23 +88,47 @@ box-shadow:0 10px 30px rgba(0,0,0,.2);
 
 .navbar-brand{
 
-font-family:'Playfair Display',serif;
+padding:0;
 
-font-size:26px;
-
-font-weight:700;
-
-letter-spacing:1px;
-
-color:#FFFFFF !important;
-
-transition:color .2s ease;
+line-height:1;
 
 }
 
-.navbar-brand:hover{
+.brand-badge{
 
-color:#D4AF37 !important;
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+width:44px;
+
+height:44px;
+
+border-radius:50%;
+
+background:#D4AF37;
+
+color:#031B4E;
+
+font-family:'Playfair Display',serif;
+
+font-weight:700;
+
+font-size:16px;
+
+letter-spacing:.5px;
+
+transition:background .2s ease, transform .2s ease;
+
+}
+
+.navbar-brand:hover .brand-badge{
+
+background:#FFFFFF;
+
+transform:scale(1.05);
 
 }
 
