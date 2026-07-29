@@ -22,6 +22,28 @@ color:#222;
 
 }
 
+/* ---------- JUSTIFIED TEXT ---------- */
+
+.about-lead,
+.about-body,
+.timeline-meta,
+.exp-bullets li,
+.pub-journal,
+.pub-meta-line,
+.conf-org,
+.project-card p,
+.ngo-partner,
+.contact-card p,
+.message-subtext{
+
+text-align:justify;
+
+text-justify:inter-word;
+
+hyphens:auto;
+
+}
+
 /* ---------- SMOOTH SCROLL ---------- */
 
 html{
