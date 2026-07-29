@@ -1435,6 +1435,26 @@ transition:.2s;
 
 }
 
+/* Override .contact-list a's flex-column layout, which otherwise
+   wins on specificity and stretches these buttons full-width
+   with left-aligned text instead of a centered pill */
+
+.contact-list a.social-follow-btn{
+
+display:inline-block;
+
+text-align:center;
+
+padding:8px 20px;
+
+}
+
+.contact-list a.social-follow-btn:hover{
+
+padding-left:20px;
+
+}
+
 .social-follow-linkedin{
 
 background-color:#0A66C2;
