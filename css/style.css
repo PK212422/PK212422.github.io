@@ -134,21 +134,39 @@ transform:scale(1.05);
 
 .nav-link{
 
-margin-left:20px;
+margin-left:8px;
+
+padding:8px 18px !important;
 
 font-weight:500;
+
+border:1.5px solid rgba(255,255,255,.25);
+
+border-radius:30px;
+
+color:#FFFFFF !important;
+
+transition:background .25s ease, border-color .25s ease, color .25s ease;
 
 }
 
 .nav-link:hover{
 
-color:#D4AF37 !important;
+background:#D4AF37;
+
+border-color:#D4AF37;
+
+color:#031B4E !important;
 
 }
 
 .nav-link.active{
 
-color:#D4AF37 !important;
+background:#D4AF37;
+
+border-color:#D4AF37;
+
+color:#031B4E !important;
 
 }
 
@@ -2190,6 +2208,22 @@ font-size:18px;
   
   .navbar-toggler[aria-expanded="true"]:hover .navbar-toggler-icon::before {
     color: #e8c485 !important;
+  }
+  
+  /* Nav-link buttons: stack cleanly in the collapsed mobile menu */
+  .navbar-nav {
+    gap: 10px;
+    padding: 16px 0 8px;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .nav-link {
+    margin-left: 0 !important;
+    display: block;
+    text-align: center;
   }
   
 }
