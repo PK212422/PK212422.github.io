@@ -166,6 +166,14 @@ padding-top:80px;
 
 }
 
+.hero-content{
+
+max-width:780px;
+
+margin:0 auto;
+
+}
+
 .welcome{
 
 letter-spacing:4px;
@@ -174,7 +182,13 @@ color:#D4AF37;
 
 font-weight:600;
 
-margin-bottom:20px;
+margin-bottom:24px;
+
+}
+
+.hero .profile-img{
+
+margin-bottom:32px;
 
 }
 
@@ -1934,8 +1948,6 @@ color:#031B4E;
 
 .hero{
 
-text-align:center;
-
 padding:140px 20px;
 
 }
@@ -1948,11 +1960,9 @@ font-size:52px;
 
 .profile-img{
 
-margin-top:50px;
+width:220px;
 
-width:260px;
-
-height:260px;
+height:220px;
 
 }
 
