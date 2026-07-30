@@ -1302,57 +1302,69 @@ font-size:14px;
 
 }
 
-.lang-row{
+.lang-grid{
 
 max-width:1000px;
 
-margin:50px auto 0;
+margin:0 auto;
 
-display:flex;
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
 
 gap:24px;
 
-padding-top:40px;
+}
 
-border-top:2px solid #E3E8EF;
+.lang-card{
+
+background:#FFFFFF;
+
+border-radius:16px;
+
+padding:32px 34px;
+
+position:relative;
+
+overflow:hidden;
+
+box-shadow:0 10px 30px rgba(3,27,78,.06);
+
+transition:transform .3s ease, box-shadow .3s ease;
 
 }
 
-.lang-item{
+.lang-card:hover{
 
-background:#031B4E;
+transform:translateY(-8px);
 
-border-radius:14px;
-
-padding:22px 30px;
-
-flex:1;
+box-shadow:0 20px 40px rgba(3,27,78,.12);
 
 }
 
-.lang-name{
-
-display:block;
+.lang-card h4{
 
 font-family:'Playfair Display',serif;
 
 font-weight:700;
 
-font-size:20px;
+font-size:19px;
 
-color:#FFFFFF;
+color:#031B4E;
 
-margin-bottom:6px;
+margin-bottom:12px;
+
+line-height:1.4;
 
 }
 
-.lang-level{
+.lang-card p{
 
-font-size:13px;
+font-size:15px;
 
-color:#D4AF37;
+color:#555;
 
-letter-spacing:.5px;
+line-height:1.75;
 
 }
 
@@ -1820,6 +1832,7 @@ transition:opacity .7s ease, transform .7s ease;
 .conf-card.is-visible,
 .project-card.is-visible,
 .ngo-card.is-visible,
+.lang-card.is-visible,
 .contact-card.is-visible,
 .message-card.is-visible,
 .facts-card.is-visible,
@@ -1891,6 +1904,7 @@ animation:none;
 .conf-card,
 .project-card,
 .ngo-card,
+.lang-card,
 .contact-card,
 .message-card,
 .facts-card,
@@ -2093,12 +2107,13 @@ grid-template-columns:1fr;
 padding:80px 0;
 
 }
+   
+.lang-grid{
 
-.lang-row{
-
-flex-direction:column;
+grid-template-columns:1fr;
 
 }
+
 
 .contact{
 
