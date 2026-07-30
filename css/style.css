@@ -242,6 +242,14 @@ line-height:1.8;
 
 margin-top:40px;
 
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:15px;
+
 }
 
 .btn-gold{
@@ -253,8 +261,6 @@ color:white;
 padding:15px 40px;
 
 border-radius:50px;
-
-margin-right:15px;
 
 font-weight:600;
 
@@ -1962,11 +1968,19 @@ height:220px;
 
 }
 
+.hero-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
 .hero-buttons a{
 
-margin-top:15px;
+width:100%;
 
-display:block;
+max-width:280px;
 
 }
 
