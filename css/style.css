@@ -2101,34 +2101,102 @@ font-size:18px;
 
 }
 
-/* ========== GOLDEN MOBILE MENU HAMBURGER ICON ========== */
+/* ========== GOLDEN MOBILE MENU WITH ANIMATED HAMBURGER ========== */
 
 @media (max-width: 991px) {
   
-  /* Hamburger menu button styling */
+  /* Hamburger button container */
   .navbar-toggler {
-    border: 2px solid #ffc107;
+    border: 2px solid #d4a373;
     padding: 8px 12px;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
   }
   
+  /* Focus state - golden shadow */
   .navbar-toggler:focus,
   .navbar-toggler:active {
     box-shadow: 0 0 0 0.25rem rgba(212, 163, 115, 0.25);
     outline: none;
   }
   
-  /* Hamburger lines (spans) - GOLDEN COLOR */
-  .navbar-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23d4a373' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    width: 1.5em;
-    height: 1.5em;
+  /* Hover state - brighter golden border */
+  .navbar-toggler:hover {
+    border-color: #e8c485;
+    background-color: rgba(212, 163, 115, 0.05);
   }
   
-  /* Hamburger icon on hover - brighter golden */
-  .navbar-toggler:hover .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23e8c485' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    transition: all 0.2s ease;
+  /* Hide default Bootstrap icon */
+  .navbar-toggler .navbar-toggler-icon {
+    display: none;
+  }
+  
+  /* Create hamburger using pseudo-elements */
+  .navbar-toggler::before,
+  .navbar-toggler::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #d4a373;
+    transition: all 0.3s ease;
+  }
+  
+  /* Top line */
+  .navbar-toggler::before {
+    top: 12px;
+    transform: translateY(-6px) rotate(0deg);
+  }
+  
+  /* Bottom line */
+  .navbar-toggler::after {
+    top: 12px;
+    transform: translateY(6px) rotate(0deg);
+  }
+  
+  /* Middle line (using border) */
+  .navbar-toggler {
+    position: relative;
+  }
+  
+  .navbar-toggler::after {
+    box-shadow: 0 6px 0 0 #d4a373;
+  }
+  
+  /* ANIMATION: When menu is open - transform to vertical lines */
+  .navbar-toggler[aria-expanded="true"]::before {
+    transform: translateY(0) rotate(90deg);
+  }
+  
+  .navbar-toggler[aria-expanded="true"]::after {
+    transform: translateY(0) rotate(90deg);
+    box-shadow: 0 6px 0 0 #d4a373;
+  }
+  
+  /* Change color on hover - all lines brighter */
+  .navbar-toggler:hover::before,
+  .navbar-toggler:hover::after {
+    background-color: #e8c485;
+  }
+  
+  .navbar-toggler:hover::after {
+    box-shadow: 0 6px 0 0 #e8c485;
+  }
+  
+  /* Hover effect for open menu */
+  .navbar-toggler[aria-expanded="true"]:hover::before,
+  .navbar-toggler[aria-expanded="true"]:hover::after {
+    background-color: #e8c485;
+  }
+  
+  .navbar-toggler[aria-expanded="true"]:hover::after {
+    box-shadow: 0 6px 0 0 #e8c485;
   }
   
 }
