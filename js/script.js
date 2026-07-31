@@ -382,7 +382,7 @@ const PROTECTION_CONFIG = {
 (function () {
   var targets = document.querySelectorAll(
     '.timeline-item, .pub-card, .conf-card, .project-card, .ngo-card, ' +
-    '.contact-card, .message-card, .facts-card, .about-lead, .about-body, .about-signature'
+    '.contact-card, .message-card, .facts-card, .about-lead, .about-body, .about-signature, .lang-card'
   );
 
   if (!targets.length) return;
@@ -407,7 +407,7 @@ const PROTECTION_CONFIG = {
 // ---------- ACTIVE NAV LINK ON SCROLL ----------
 (function () {
   var sections = document.querySelectorAll(
-    '#about, #education, #experience, #research, #projects, #skills, #contact'
+    '#about, #education, #experience, #research, #projects, #skills, #languages, #contact'
   );
   var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
