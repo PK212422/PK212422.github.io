@@ -102,9 +102,10 @@ line-height:1;
     width:52px;
     height:52px;
     border-radius:50%;
-    background:#FFD56B;
-    padding:6px;
+    background:transparent;
+    padding:0;
     object-fit:contain;
+    cursor:pointer;
     transition: transform .25s ease;
 }
 
@@ -152,6 +153,20 @@ background:#D4AF37;
 border-color:#D4AF37;
 
 color:#031B4E !important;
+
+}
+
+/* Mobile logo */
+
+@media (max-width:576px){
+
+    .brand-logo{
+
+        width:46px;
+
+        height:46px;
+
+    }
 
 }
 
