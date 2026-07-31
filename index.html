@@ -72,68 +72,7 @@ crossorigin>
     <link rel="stylesheet" href="css/style.css">
     
     <!-- Anti-Copy & Watermark Styles -->
-    <style>
-        /* Disable user select globally (overridden by script for allowed elements) */
-        html, body {
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            -webkit-touch-callout: none;
-        }
-        
-        /* Allow text selection in form fields */
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        textarea,
-        .form-control {
-            -webkit-user-select: text;
-            -moz-user-select: text;
-            -ms-user-select: text;
-            user-select: text;
-        }
-        
-        /* Disable image dragging and context menu appearance */
-        img {
-            -webkit-user-drag: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            pointer-events: auto;
-        }
-        
-        /* Watermark will be injected via script */
-        /* Ensure content stays above watermark */
-        .navbar, .hero, .about, .education, .experience, 
-        .research, .projects, .skills, .contact, .site-footer {
-            position: relative;
-            z-index: 10;
-        }
-        
-        /* Hide print styles */
-        @media print {
-            * {
-                display: none !important;
-            }
-            body {
-                background: white;
-            }
-        }
-        
-        /* Prevent selection appearance */
-        ::selection {
-            background-color: transparent;
-            color: inherit;
-        }
-        
-        ::-moz-selection {
-            background-color: transparent;
-            color: inherit;
-        }
-    </style>
-
+    
 </head>
 
 <body>
