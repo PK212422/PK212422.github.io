@@ -82,7 +82,7 @@ padding:8px 0;
 
 background:#031B4E;
 
-box-shadow:0 10px 30px rgba(0,0,0,.2);
+box-shadow:0 6px 20px rgba(0,0,0,.18);
 
 }
 
@@ -98,12 +98,14 @@ line-height:1;
 /* ---------- update ---------- */
 
 .brand-logo{
+    display:block;
     width:52px;
     height:52px;
     border-radius:50%;
     background:#FFD56B;
     padding:6px;
     object-fit:contain;
+    transition: transform .25s ease;
 }
 
 .navbar-brand:hover .brand-logo{
@@ -118,7 +120,7 @@ padding:8px 18px !important;
 
 font-weight:500;
 
-border:1.5px solid rgba(255,255,255,.25);
+border:1.5px solid rgba(255,255,255,.35);
 
 border-radius:30px;
 
@@ -136,6 +138,11 @@ border-color:#D4AF37;
 
 color:#031B4E !important;
 
+}
+
+.nav-link:focus-visible{
+    outline:2px solid #FFD56B;
+    outline-offset:3px;
 }
 
 .nav-link.active{
