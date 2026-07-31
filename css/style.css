@@ -94,42 +94,20 @@ line-height:1;
 
 }
 
-.brand-badge{
 
-display:inline-flex;
+/* ---------- update ---------- */
 
-align-items:center;
-
-justify-content:center;
-
-width:44px;
-
-height:44px;
-
-border-radius:50%;
-
-background:#D4AF37;
-
-color:#031B4E;
-
-font-family:'Playfair Display',serif;
-
-font-weight:700;
-
-font-size:16px;
-
-letter-spacing:.5px;
-
-transition:background .2s ease, transform .2s ease;
-
+.brand-logo{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:#FFD56B;
+    padding:6px;
+    object-fit:contain;
 }
 
-.navbar-brand:hover .brand-badge{
-
-background:#FFFFFF;
-
-transform:scale(1.05);
-
+.navbar-brand:hover .brand-logo{
+    transform:scale(1.08);
 }
 
 .nav-link{
