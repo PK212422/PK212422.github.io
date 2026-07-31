@@ -2213,9 +2213,9 @@ font-size:18px;
     color: #e8c485 !important;
   }
   
-  /* Animation on menu open - change to vertical (⋮) */
+  /* Animation on menu open - change to close (X) */
   .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
-    content: "⋮" !important;
+    content: "X" !important;
     color: #d4a373 !important;
     transition: color 0.3s ease !important;
   }
