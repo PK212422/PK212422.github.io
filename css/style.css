@@ -269,7 +269,7 @@ margin:0 auto;
 
 letter-spacing:4px;
 
-color:#D4AF37;
+color:#8C6612;
 
 font-weight:600;
 
@@ -301,11 +301,11 @@ color:#031B4E;
 
 .hero h1 span{
 
-color:#D4AF37;
+color:#8C6612;
 
 }
 
-.hero h3{
+.hero-subtitle{
 
 margin-top:20px;
 
@@ -347,7 +347,7 @@ gap:15px;
 
 background:#D4AF37;
 
-color:white;
+color:#031B4E;
 
 padding:15px 40px;
 
@@ -361,7 +361,7 @@ font-weight:600;
 
 background:#b58d15;
 
-color:white;
+color:#031B4E;
 
 }
 
@@ -405,7 +405,7 @@ background:#EFE8D8;
 
 letter-spacing:4px;
 
-color:#D4AF37;
+color:#8C6612;
 
 font-weight:600;
 
@@ -433,7 +433,7 @@ margin-bottom:28px;
 
 .about .section-title span{
 
-color:#D4AF37;
+color:#8C6612;
 
 }
 
@@ -473,7 +473,7 @@ border-top:2px solid #F0E6C8;
 
 }
 
-.about-signature h4{
+.about-signature h3{
 
 font-family:'Playfair Display',serif;
 
@@ -487,7 +487,7 @@ font-size:20px;
 
 .about-signature span{
 
-color:#D4AF37;
+color:#8C6612;
 
 font-weight:500;
 
@@ -581,7 +581,7 @@ background:#EFE8D8;
 
 letter-spacing:4px;
 
-color:#D4AF37;
+color:#8C6612;
 
 font-weight:600;
 
@@ -697,13 +697,13 @@ font-weight:700;
 
 letter-spacing:2px;
 
-color:#D4AF37;
+color:#8C6612;
 
 margin-bottom:10px;
 
 }
 
-.timeline-content h4{
+.timeline-content h3{
 
 font-family:'Playfair Display',serif;
 
@@ -763,7 +763,7 @@ background:#EFE8D8;
 
 letter-spacing:4px;
 
-color:#D4AF37;
+color:#8C6612;
 
 font-weight:600;
 
@@ -803,7 +803,7 @@ margin-bottom:10px;
 
 .experience-company span{
 
-color:#888;
+color:#555;
 
 font-size:15px;
 
@@ -895,7 +895,7 @@ background:#EFE8D8;
 
 letter-spacing:4px;
 
-color:#D4AF37;
+color:#8C6612;
 
 font-weight:600;
 
@@ -961,7 +961,7 @@ border-left:4px solid #D4AF37;
 
 }
 
-.pub-card h4{
+.pub-card h3{
 
 font-family:'Playfair Display',serif;
 
@@ -1027,7 +1027,7 @@ font-size:14px;
 
 font-weight:600;
 
-color:#D4AF37;
+color:#8C6612;
 
 border:1.5px solid #D4AF37;
 
@@ -1045,7 +1045,7 @@ transition:.2s;
 
 background:#D4AF37;
 
-color:#FFFFFF;
+color:#031B4E;
 
 }
 
@@ -1097,7 +1097,7 @@ margin-bottom:14px;
 
 }
 
-.conf-card h4{
+.conf-card h3{
 
 font-family:'Playfair Display',serif;
 
@@ -1119,7 +1119,7 @@ font-size:13px;
 
 font-weight:600;
 
-color:#D4AF37;
+color:#8C6612;
 
 margin-bottom:8px;
 
@@ -1149,7 +1149,7 @@ background:#EFE8D8;
 
 letter-spacing:4px;
 
-color:#D4AF37;
+color:#8C6612;
 
 font-weight:600;
 
@@ -1197,7 +1197,7 @@ font-weight:700;
 
 font-size:36px;
 
-color:#D4AF37;
+color:#8C6612;
 
 opacity:.5;
 
@@ -1205,7 +1205,7 @@ margin-bottom:8px;
 
 }
 
-.project-card h4{
+.project-card h3{
 
 font-family:'Playfair Display',serif;
 
@@ -1287,7 +1287,7 @@ margin:8px 0 20px;
 
 }
 
-.ngo-card h4{
+.ngo-card h3{
 
 font-family:'Playfair Display',serif;
 
@@ -1365,7 +1365,7 @@ background:#EFE8D8;
 
 letter-spacing:4px;
 
-color:#D4AF37;
+color:#8C6612;
 
 font-weight:600;
 
@@ -1415,7 +1415,7 @@ box-shadow:0 28px 50px rgba(3,27,78,.28);
 
 }
 
-.lang-card h4{
+.lang-card h3{
 
 font-family:'Playfair Display',serif;
 
@@ -1454,7 +1454,7 @@ background:#EFE8D8;
 
 letter-spacing:4px;
 
-color:#D4AF37;
+color:#8C6612;
 
 font-weight:600;
 
@@ -1478,7 +1478,7 @@ box-shadow:0 25px 50px rgba(3,27,78,.25);
 
 }
 
-.contact-card h4{
+.contact-card h3{
 
 font-family:'Playfair Display',serif;
 
@@ -1653,7 +1653,7 @@ height:100%;
 
 }
 
-.message-card h4{
+.message-card h3{
 
 font-family:'Playfair Display',serif;
 
@@ -1813,7 +1813,7 @@ animation:fadeUp .8s ease .1s both;
 
 }
 
-.hero h3{
+.hero-subtitle{
 
 animation:fadeUp .8s ease .2s both;
 
@@ -1962,7 +1962,7 @@ scroll-behavior:auto;
 
 .hero .welcome,
 .hero h1,
-.hero h3,
+.hero-subtitle,
 .hero p,
 .hero-buttons,
 .hero .profile-img{
