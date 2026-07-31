@@ -8,7 +8,15 @@
     
     <!-- Security & Anti-Copy Headers -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; frame-ancestors 'none';">
+   <meta http-equiv="Content-Security-Policy"
+content="
+default-src 'self' https:;
+img-src 'self' https: data:;
+style-src 'self' https: 'unsafe-inline';
+script-src 'self' https: 'unsafe-inline' 'unsafe-eval';
+font-src 'self' https:;
+connect-src 'self' https:;
+">
     <meta name="referrer" content="no-referrer">
     <meta name="format-detection" content="telephone=no">
    <meta property="og:image"
